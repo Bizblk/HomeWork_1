@@ -11,7 +11,7 @@
 		149F295C279BFDE800C45001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F295B279BFDE800C45001 /* ContentView.swift */; };
 		149F295E279BFDE900C45001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149F295D279BFDE900C45001 /* Assets.xcassets */; };
 		149F2961279BFDE900C45001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149F2960279BFDE900C45001 /* Preview Assets.xcassets */; };
-		149F2968279DB16D00C45001 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F2967279DB16D00C45001 /* Model.swift */; };
+		149F2968279DB16D00C45001 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F2967279DB16D00C45001 /* MemoryGame.swift */; };
 		149F296A279DB41800C45001 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F2969279DB41800C45001 /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		149F295B279BFDE800C45001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		149F295D279BFDE900C45001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		149F2960279BFDE900C45001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		149F2967279DB16D00C45001 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		149F2967279DB16D00C45001 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		149F2969279DB41800C45001 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 			children = (
 				149F2959279BFDE800C45001 /* HomeWork_1App.swift */,
 				149F295B279BFDE800C45001 /* ContentView.swift */,
-				149F2967279DB16D00C45001 /* Model.swift */,
+				149F2967279DB16D00C45001 /* MemoryGame.swift */,
 				149F2969279DB41800C45001 /* EmojiMemoryGame.swift */,
 				149F295D279BFDE900C45001 /* Assets.xcassets */,
 				149F295F279BFDE900C45001 /* Preview Content */,
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149F2968279DB16D00C45001 /* Model.swift in Sources */,
+				149F2968279DB16D00C45001 /* MemoryGame.swift in Sources */,
 				149F295C279BFDE800C45001 /* ContentView.swift in Sources */,
 				149F295A279BFDE800C45001 /* HomeWork_1App.swift in Sources */,
 				149F296A279DB41800C45001 /* EmojiMemoryGame.swift in Sources */,
