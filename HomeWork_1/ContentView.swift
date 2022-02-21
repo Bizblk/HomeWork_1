@@ -12,12 +12,10 @@ struct ContentView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     
     
-    var emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑", "🚒", "🚐", "🛻", "🚚", "🚛", "🚜"]
-    var emojisTwo = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🎾", "🏐", "🏉", "🥏", "🎱", "🪀", "🏓", "🏸"]
-    var emojisThree = ["🇷🇺", "🇵🇾", "🇷🇼", "🇸🇳", "🇻🇨", "🇰🇳", "🇼🇸", "🇹🇬", "🇺🇿", "🇫🇴", "🇹🇩", "🇪🇹"]
     
-    @State var startEmojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑", "🚒", "🚐", "🛻", "🚚", "🚛", "🚜"]
-    @State var emojiCount = 6
+    
+//    @State var startEmojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑", "🚒", "🚐", "🛻", "🚚", "🚛", "🚜"]
+//    @State var emojiCount = 6
     
     var body: some View {
         VStack {
@@ -36,15 +34,15 @@ struct ContentView: View {
             .foregroundColor(.red)
             Spacer(minLength: 20)
             HStack(alignment: .bottom, spacing: 50.0) {
-                    themeOne
-                    themeTwo
-                    themeThree
+                   // themeOne
+                   // themeTwo
+                   // themeThree
             }
             Spacer()
             HStack {
-                remove
+               // remove
                 Spacer()
-                add
+               // add
             }.font(.largeTitle)
             
             
@@ -54,75 +52,75 @@ struct ContentView: View {
         
     }
     
-    var remove: some View {
-        Button {
-            if emojiCount > 1 {
-                emojiCount -= 1
-            }
-        } label: {
-            Image(systemName: "minus.circle")
-        }
-    }
+//    var remove: some View {
+//        Button {
+//            if emojiCount > 1 {
+//                emojiCount -= 1
+//            }
+//        } label: {
+//            Image(systemName: "minus.circle")
+//        }
+//    }
     
-    var add: some View {
-        Button {
-            if emojiCount < startEmojis.count {
-                emojiCount += 1
-            }
-        } label: {
-            Image(systemName: "plus.circle")
-        }
-    }
+//    var add: some View {
+//        Button {
+//            if emojiCount < startEmojis.count {
+//                emojiCount += 1
+//            }
+//        } label: {
+//            Image(systemName: "plus.circle")
+//        }
+//    }
     
-    var themeOne: some View {
-        Button {
-            if emojiCount > emojis.count {
-                emojiCount = emojis.count
-            }
-            startEmojis = emojis
-            emojiCount = Int.random(in: 4...startEmojis.count)
-        } label: {
-            VStack {
-                Image(systemName: "car")
-                Text("Vehicles").font(.subheadline)
-            }.font(.largeTitle)
-            
-        }
-    }
+//    var themeOne: some View {
+//        Button {
+//            if emojiCount > emojis.count {
+//                emojiCount = emojis.count
+//            }
+//            startEmojis = emojis
+//            emojiCount = Int.random(in: 4...startEmojis.count)
+//        } label: {
+//            VStack {
+//                Image(systemName: "car")
+//                Text("Vehicles").font(.subheadline)
+//            }.font(.largeTitle)
+//
+//        }
+//    }
     
-    var themeTwo: some View {
-        Button {
-            if emojiCount > emojisTwo.count {
-                emojiCount = emojisTwo.count
-            }
-            startEmojis = emojisTwo
-            emojiCount = Int.random(in: 4...startEmojis.count)
-
-        } label: {
-            VStack {
-                Image(systemName: "hare")
-                Text("Games").font(.subheadline)
-            }.font(.largeTitle)
-            
-        }
-    }
+//    var themeTwo: some View {
+//        Button {
+//            if emojiCount > emojisTwo.count {
+//                emojiCount = emojisTwo.count
+//            }
+//            startEmojis = emojisTwo
+//            emojiCount = Int.random(in: 4...startEmojis.count)
+//
+//        } label: {
+//            VStack {
+//                Image(systemName: "hare")
+//                Text("Games").font(.subheadline)
+//            }.font(.largeTitle)
+//
+//        }
+//    }
     
-    var themeThree: some View {
-        Button {
-            if emojiCount > emojisThree.count {
-                emojiCount = emojisThree.count
-            }
-            startEmojis = emojisThree
-            emojiCount = Int.random(in: 4...startEmojis.count)
-
-        } label: {
-            VStack {
-                Image(systemName: "flag")
-                Text("Flags").font(.subheadline)
-            }.font(.largeTitle)
-            
-        }
-    }
+//    var themeThree: some View {
+//        Button {
+//            if emojiCount > emojisThree.count {
+//                emojiCount = emojisThree.count
+//            }
+//            startEmojis = emojisThree
+//            emojiCount = Int.random(in: 4...startEmojis.count)
+//
+//        } label: {
+//            VStack {
+//                Image(systemName: "flag")
+//                Text("Flags").font(.subheadline)
+//            }.font(.largeTitle)
+//
+//        }
+//    }
     
     func widthThatBestFits(cardCount: Int) -> CGFloat {
         var size: CGFloat = 0

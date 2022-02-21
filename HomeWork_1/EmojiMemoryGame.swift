@@ -10,13 +10,20 @@ import Foundation
 class EmojiMemoryGame: ObservableObject {
     
     static let emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑", "🚒", "🚐", "🛻", "🚚", "🚛", "🚜"]
-    
+    static let emojisTwo = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🎾", "🏐", "🏉", "🥏", "🎱", "🪀", "🏓", "🏸"]
+    static let emojisThree = ["🇷🇺", "🇵🇾", "🇷🇼", "🇸🇳", "🇻🇨", "🇰🇳", "🇼🇸", "🇹🇬", "🇺🇿", "🇫🇴", "🇹🇩", "🇪🇹"]
     
     static func createMemoryGame() -> MemoryGame<String>{
         MemoryGame<String> (numberOfPairsOfCards: 4) { pairIndex in
             emojis[pairIndex]
         }
     }
+    
+//    static func createMemoryGameTwo(emojis: [String]) -> MemoryGame<String>{
+//        MemoryGame<String> (numberOfPairsOfCards: 4) { pairIndex in
+//            emojis[pairIndex]
+//        }
+//    }
     
    @Published private var model: MemoryGame<String> = createMemoryGame()
     
